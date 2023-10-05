@@ -7,17 +7,17 @@ int main(int argc, char *argv[])
 {
 	int number;
 	printf("정수를 입력하시오:");
-	scanf("%d", number);
+	scanf("%d", &number);
 	
 	if (number>=0)
 		if (number==0)
-		printf("0입니다.");
+			printf("0입니다.\n");
 		if (number>0)
-		printf("양수입니다.");
+			printf("양수입니다.\n");
 		
-	else (number<0)
-	printf("음수입니다.");
+	else if (number<0)
+		printf("음수입니다.\n");
  
-	
+	system("PAUSE");
 	return 0;
 }
